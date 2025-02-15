@@ -19,8 +19,8 @@ const moveBall = _.debounce((event) => {
   const clickX = event.clientX - fieldRect.left;
   const clickY = event.clientY - fieldRect.top;
 
-  ball.style.top = `${clickY - ball.offsetHeight / 2}px`;
-  ball.style.left = `${clickX - ball.offsetWidth / 2}px`;
+  ball.style.top = `${clickY - ball.offsetHeight / 5}px`;
+  ball.style.left = `${clickX - ball.offsetWidth / 5}px`;
 }, 200);
 
 field.addEventListener("click", moveBall);
